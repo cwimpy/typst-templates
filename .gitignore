@@ -21,6 +21,14 @@ nsf-proposal/_output/
 .DS_Store
 Thumbs.db
 
+# macOS duplicate-folder cruft from iCloud / Dropbox sync conflicts
+* 2
+* 2.*
+* 3
+* 3.*
+** 2
+** 2/*
+
 # Editor
 .vscode/
 .idea/
