@@ -1,0 +1,30 @@
+---
+title: "Your Proposal Title Here"
+format:
+  nsf-proposal-typst:
+    margin:
+      x: 0.75in
+      y: 0.75in
+    fontsize: 10pt
+---
+
+<!-- PI SUMMARY – Brief narrative overview of the proposal.
+     Some solicitations require a one-page personal statement or
+     fellowship summary. Adjust the content and length to match
+     your solicitation's requirements.
+
+     This template uses slightly tighter margins and smaller font
+     to fit more content on one page. Adjust as needed. -->
+
+TODO: Write a brief narrative overview of the proposed project in
+your own voice. Cover:
+
+- Your research focus and what motivates this work
+- The specific aims or objectives
+- Your host institution and collaborator (if applicable)
+- Why you are positioned to execute this project
+- The expected impact and outcomes
+- Timeline and budget overview
+
+This document is optional depending on your solicitation. Delete
+this file and remove it from _quarto.yml if not needed.

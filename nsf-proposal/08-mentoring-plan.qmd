@@ -1,0 +1,48 @@
+---
+title: "Your Proposal Title Here"
+---
+
+<!-- MENTORING PLAN – 1 PAGE MAXIMUM (PAPPG II.D.2.i(i))
+     Required per CHIPS and Science Act (42 U.S.C. § 1862(a)) when
+     postdoctoral researchers or graduate students are supported.
+     Must be uploaded under "Mentoring Plan" in the supplementary
+     documentation section of Research.gov.
+
+     The plan may differ for postdocs vs. graduate students but
+     only one mentoring plan is submitted per proposal.
+
+     If your proposal does not support postdocs or graduate students,
+     delete this file and remove it from _quarto.yml and the Makefile. -->
+
+# Mentoring Plan
+
+TODO: Describe the mentoring plan for postdoctoral researchers and/or
+graduate students. Address the following areas:
+
+1. **Orientation.** Initial expectations, work habits, research
+   documentation, and interaction with collaborators.
+
+2. **Career counseling.** Skills, knowledge, and experience needed
+   for the mentee's chosen career path.
+
+3. **Scientific guidance.** Frequency of meetings, progress tracking,
+   and feedback mechanisms.
+
+4. **Writing and presentation skills.** Opportunities to write
+   publications, present at group meetings, and deliver conference
+   talks.
+
+5. **Experience with funding applications.** Involvement in proposal
+   preparation when appropriate.
+
+6. **Mentoring experience.** Opportunities for postdocs to mentor
+   junior researchers and for graduate students to mentor
+   undergraduates.
+
+7. **Networking and professional development.** Conference attendance,
+   workshop participation, and connections to the broader research
+   community.
+
+8. **Assessment.** How the success of mentoring will be evaluated
+   (e.g., biannual review meetings, tracking progress toward career
+   goals).

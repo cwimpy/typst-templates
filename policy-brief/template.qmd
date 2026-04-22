@@ -1,0 +1,89 @@
+---
+format: policy-brief-typst
+series: "Example Policy Initiative"
+issue: "Brief No. 4"
+date: "2026-04-01"
+title: "Staffing Community Services"
+subtitle: "Why population is the wrong metric — and what to use instead"
+brief-author: "Jane Doe, Ph.D."
+brief-affiliation: "Example Institute, Example University"
+key-findings:
+  - "Service offices face capacity constraints that are poorly predicted by population alone."
+  - "Staffing ratios, site contiguity, and distance to the central office together explain over 60% of variation in wait times and service denials."
+  - "A three-variable capacity index better identifies at-risk jurisdictions than the population thresholds used in most federal formulas."
+cite-as: "Doe, Jane. 2026. \"Staffing Community Services.\" Example Policy Initiative Brief No. 4. Example Institute, Example University."
+contact: "example-institute@example.edu  ·  example-institute.example.edu"
+# accent-color: "1a5490"    # optional — hex without the #
+---
+
+# The problem
+
+Federal and state programs that allocate resources to local service
+offices typically use **county population** as the primary measure of
+need. Yet jurisdictions with similar populations vary substantially in
+their capacity to deliver services — and the variation matters for the
+people those programs are meant to reach. This brief draws on an
+original survey of 412 local officials and administrative records from
+two recent fiscal years to show why a better metric is needed, and what
+one could look like.
+
+```{=typst}
+#pullquote[
+  Two jurisdictions with identical populations can have service wait
+  times that differ by a factor of four. Population is not capacity.
+]
+```
+
+# What we measured
+
+We combined three indicators that officials themselves identified as
+primary constraints: the ratio of permanent staff to the eligible
+population, the geographic contiguity of service sites within a
+jurisdiction, and the average distance from sites to the central office.
+Each is straightforward to measure from publicly available
+administrative data.
+
+## Staffing ratios
+
+Offices with fewer than one permanent staff member per 5,000 eligible
+residents were three times more likely to report service-denial rates
+above the state median. The effect is concentrated in smaller
+jurisdictions — where a single retirement or medical leave can halve
+administrative capacity.
+
+## Site contiguity and distance
+
+Service sites are the operational units that residents interact with.
+In the 200 most geographically dispersed jurisdictions we studied, the
+average site was 22 miles from the central office, and in 38
+jurisdictions at least one site was more than 50 miles away. That
+distance shows up in wait times, in equipment deployment costs, and in
+the likelihood that problems encountered in the field can be resolved
+before the close of business.
+
+# Why population misses this
+
+Two jurisdictions with 20,000 eligible residents each can have
+radically different administrative profiles: one may have a single site
+and two permanent staff, the other may have 14 sites spread across 800
+square miles and one half-time coordinator. Population treats them as
+the same. Our proposed three-variable index treats them differently —
+and more accurately predicts the outcomes policymakers care about.
+
+```{=typst}
+#recommendations[
+  - **Replace population-only thresholds** in federal allocation
+    formulas with a three-variable capacity index.
+  - **Fund state-level capacity audits** that inventory staffing, site
+    contiguity, and geographic dispersion at the jurisdiction level.
+  - **Tie technical-assistance resources** — training, equipment,
+    peer-network programs — to the bottom quartile of the capacity
+    index rather than to population thresholds.
+]
+```
+
+# What's next
+
+We are currently working with the state coordinating agency to pilot
+capacity audits in a set of jurisdictions during the next fiscal year.
+Results will inform a longer report planned for release in late 2026.

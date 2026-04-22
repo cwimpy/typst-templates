@@ -1,0 +1,140 @@
+---
+title: "Measuring Community Services Across Regions"
+subtitle: "Evidence from a Multi-Classification Approach"
+by-author:
+  - name:
+      literal: "Jane Doe"
+  - name:
+      literal: "John Smith"
+orcid: "0000-0000-0000-0000"
+affiliation: "Department of Example Studies  •  Example Institute  •  Example University"
+venue: "Example Conference 2026"
+poster-date: "June 2026"
+hero-line: |
+  Classification choice shapes measured variation. Under two thirds of
+  specifications, the core finding holds; under the rest, it reverses.
+  **Measurement decides which story you see.**
+footer-contact: "jane.doe@example.edu  ·  orcid.org/0000-0000-0000-0000"
+footer-affiliation: "Example Institute  ·  Example University"
+footer-resources: "R package: `examplepkg`  ·  github.com/example/examplepkg"
+# logo-left: "figures/logo-left.png"
+# logo-right: "figures/logo-right.png"
+format:
+  poster-typst:
+    keep-typ: true
+---
+
+```{=typst}
+#grid(
+  columns: (1fr, 1fr, 1fr, 1fr),
+  gutter: 12mm,
+
+  // ============================================================
+  // COLUMN 1 — Motivation, Question
+  // ============================================================
+  [
+    #section-title[Motivation]
+
+    Researchers almost always pick one classification and report
+    results. But classifications disagree — and when they do, the
+    substantive conclusion can follow the label rather than the data.
+
+    #v(4mm)
+
+    #callout[
+      #text(size: 26pt)[
+        *The puzzle.* Classifications disagree on
+        #text(weight: "bold", fill: palette.accent)[12.6%] of units.
+        Does that disagreement change what we conclude?
+      ]
+    ]
+
+    #v(6mm)
+    #section-title[Question]
+
+    Using two outcomes that differ sharply in robustness, what does
+    between-group variation actually look like, and which outcomes
+    need a continuous measure to describe honestly?
+  ],
+
+  // ============================================================
+  // COLUMN 2 — Design, Dimensions
+  // ============================================================
+  [
+    #section-title[Design]
+
+    We assemble administrative data from two recent fiscal years and
+    compare three classification schemes side-by-side. Our analysis
+    uses specification-curve methods to show how conclusions vary
+    across measurement choices.
+
+    #v(4mm)
+    #section-title[Dimensions]
+
+    #dim-chip("1", "Staffing", "Permanent staff per 10,000 eligible residents.")
+    #dim-chip("2", "Contiguity", "Share of service sites within 10 miles of the central office.")
+    #dim-chip("3", "Distance", "Average distance from site to central office, in miles.")
+  ],
+
+  // ============================================================
+  // COLUMN 3 — Key findings
+  // ============================================================
+  [
+    #section-title[Key Finding 1]
+
+    The variation holds in #text(weight: "bold")[67%] of specifications
+    — and reverses in a non-trivial share of the remaining cases.
+
+    #v(6mm)
+
+    #grid(
+      columns: (1fr, 1fr),
+      gutter: 6mm,
+      stat-card("67%", "specifications preserve the finding"),
+      stat-card("12.6%", "units where schemes disagree"),
+    )
+
+    #v(8mm)
+
+    #section-title[Key Finding 2]
+
+    Outcomes that look stable under one classification become noisy
+    under another. Continuous measures recover information that
+    categorical labels throw away.
+  ],
+
+  // ============================================================
+  // COLUMN 4 — Implications, Resources
+  // ============================================================
+  [
+    #section-title[Implications]
+
+    - Choice of classification is a research-design decision, not a
+      neutral accounting step.
+    - Sensitivity analyses across classifications should be routine.
+    - Continuous measures should be preferred where the underlying
+      construct is continuous.
+
+    #v(6mm)
+
+    #callout(
+      color: palette.primary,
+      fill: rgb("#eaf0f5"),
+    )[
+      #text(size: 26pt)[
+        *Bottom line.* Report your classification choice, report a
+        sensitivity analysis, and prefer continuous measures where
+        they exist.
+      ]
+    ]
+
+    #v(6mm)
+
+    #section-title[Resources]
+
+    - Code and data: `github.com/example/examplepkg`
+    - Replication archive: Harvard Dataverse (DOI on request)
+    - Preprint: SSRN (link on request)
+  ],
+)
+```

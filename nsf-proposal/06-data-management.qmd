@@ -1,0 +1,45 @@
+---
+title: "Your Proposal Title Here"
+---
+
+<!-- DATA MANAGEMENT AND SHARING PLAN – 2 PAGE MAXIMUM (PAPPG II.D.2.i(ii))
+     Uploaded under "Data Management and Sharing Plan" in the
+     supplementary documentation section of Research.gov.
+     Per NSF PAPPG, the plan must address:
+       1. Types of data, samples, software, and other materials produced
+       2. Standards for data and metadata format and content
+       3. Policies for access and sharing, including privacy protections
+       4. Policies for re-use, redistribution, and derivatives
+       5. Plans for archiving and preservation of access -->
+
+# Data Management and Sharing Plan
+
+## Types of Data Produced
+
+TODO: Describe the types of data, samples, physical collections,
+software, models, and other materials to be produced in the course
+of the project.
+
+## Data Standards and Formats
+
+TODO: Describe the standards and formats to be used for data and
+metadata. Include file formats, documentation practices, and
+codebook conventions.
+
+## Access and Sharing
+
+TODO: Describe how data will be shared during and after the project.
+Include repositories (e.g., Harvard Dataverse, Zenodo, ICPSR),
+access timelines, and any restrictions.
+
+## Re-use and Redistribution
+
+TODO: Describe policies for re-use, redistribution, and derivative
+works. Address licensing (e.g., CC-BY, MIT) and any restrictions
+on sensitive data.
+
+## Preservation and Archiving
+
+TODO: Describe the plan for long-term preservation of data and
+access. Include the archive or repository, retention period, and
+format migration strategy.

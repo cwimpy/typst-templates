@@ -1,0 +1,102 @@
+---
+title: "Response to Reviewers"
+format: review-response-typst
+manuscript-title: "The Effect of Early-Life Educational Investment on Adult Labor Market Outcomes"
+manuscript-id: "JES-2026-0123"
+venue: "Journal of Example Studies"
+editor-name: "Dr. Jane Editor"
+authors-list: "Doe, Smith, and Jones"
+date: "2026-04-21"
+---
+
+We thank the editor and both reviewers for their careful reading of our
+manuscript and for the many constructive suggestions. The revised paper
+is substantially stronger as a result. Below we provide a point-by-point
+response. Reviewer comments appear in gray blocks; our responses follow
+each comment. Page and line references are to the revised manuscript.
+
+# Reviewer 1
+
+```{=typst}
+#reviewer-comment[
+  The composite index in Section 3 combines three indicators with equal
+  weights. This choice should be justified, or alternative weighting
+  schemes explored.
+]
+
+#response[
+  We agree this warranted more justification. In the revised Section 3
+  (pp. 8--10), we now (a) motivate the equal-weight choice by reference
+  to prior work, and (b) present a sensitivity analysis using
+  principal-components weights in Appendix B. The main findings are
+  robust: the coefficient on the primary treatment changes by less than
+  10% across specifications.
+]
+
+#reviewer-comment[
+  Several tables would benefit from clustered standard errors at a
+  higher level, given the likely correlation structure.
+]
+
+#response[
+  Corrected throughout. All regression tables now report standard
+  errors clustered at the appropriate level (see note below each table).
+  Statistical significance of the main result is unchanged.
+]
+```
+
+# Reviewer 2
+
+```{=typst}
+#reviewer-comment[
+  The sample is restricted to participants who completed all three
+  waves. Results using alternative handling of attrition would
+  strengthen the paper.
+]
+
+#response[
+  We now report results using multiple imputation as our preferred
+  approach (Table 3), and retain the complete-case version as a
+  robustness check in Appendix C. Substantive conclusions are consistent
+  across specifications.
+]
+
+#reviewer-comment[
+  The discussion section repeats several points from the introduction
+  and should be tightened.
+]
+
+#response[
+  The discussion has been rewritten (pp. 24--26) and trimmed by roughly
+  one-third. It now focuses on the theoretical and policy implications
+  of the findings rather than restating the results.
+]
+```
+
+# Editor
+
+```{=typst}
+#reviewer-comment[
+  Please ensure the manuscript conforms to journal style and does not
+  exceed the 10,000-word limit.
+]
+
+#response[
+  The revised manuscript is 9,420 words inclusive of references, tables,
+  and figures. We have conformed to journal style throughout.
+]
+```
+
+# Summary of Changes
+
+The principal changes in the revision are:
+
+1. A new sensitivity analysis for the primary index (Section 3, Appendix B)
+2. Clustered standard errors at the appropriate level throughout
+3. A new primary specification using multiple imputation (Table 3)
+4. A tightened and refocused discussion section
+5. Copyediting and style adjustments to meet journal requirements
+
+We believe these revisions address the reviewers' concerns and we hope
+the paper is now suitable for publication. We are grateful for the
+thoughtful feedback and happy to provide any further clarifications.

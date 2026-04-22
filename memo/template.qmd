@@ -1,0 +1,54 @@
+---
+format: memo-typst
+title: "MEMORANDUM"
+memo-to: "Prof. Department Faculty"
+memo-from: "Dr. Jane Doe, Chair"
+subject: "Spring 2026 Scheduling and Course Load Reminders"
+date: "2026-04-21"
+sender-name: "Dr. Jane Doe"
+sender-qualifications: "PhD"
+sender-position: "Associate Professor and Chair"
+sender-department: "Department of Example Studies"
+sender-institution: "Your University | City, ST"
+sender-email: "jane.doe@university.edu"
+sender-phone: "(555) 555-0100"
+sender-website: "janedoe.example"
+# dept-header: "College of Liberal Arts and Communication"
+# dept-subheader: "Example Studies | PO Box 1234, City ST 00000 | 555-555-0100"
+# logo-header: "assets/department-logo.png"
+# logo-footer: "assets/accreditation-mark.png"
+# author-sig: true
+# signature: "assets/signature.png"
+# cosig: true
+# cosig-name: "Dr. Dean Name"
+# cosig-title: "Dean, College of Liberal Arts"
+---
+
+This memo summarizes a few items I want to be sure everyone has on their
+radar as we wrap up the spring semester and head into summer planning.
+
+## Scheduling
+
+Please submit your availability for fall teaching by May 15. I know a few
+of you are working through research leaves and course-release requests;
+bring those to me directly so I can factor them into the schedule.
+
+## Course Load
+
+As a reminder, the standard load for AY 2026–27 is 3/3 for tenure-track
+faculty and 4/4 for lecturers, with reductions per your contract. If you
+have questions about how any of this applies to your individual situation,
+please let me know.
+
+## Summer Travel
+
+Anyone traveling on department or grant funds this summer should submit
+travel authorizations at least two weeks prior to travel. The university's
+reimbursement processing has slowed this year, so the earlier the better.
+
+If any of the above needs further discussion, please reach out. I am happy
+to meet in person or by email to work through any questions.
+
+```{=typst}
+#ps[PS: The next department meeting is scheduled for May 8 at 2:00 PM.]
+```

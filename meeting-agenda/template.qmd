@@ -1,0 +1,51 @@
+---
+format: meeting-agenda-typst
+committee: "Department of Example Studies"
+doc-kind: "Agenda"
+date: "2026-04-21"
+time: "2:00 – 3:30 PM"
+location: "Humanities 240"
+chair: "Jane Doe"
+members:
+  - "Alice Alvarez"
+  - "Bob Baker"
+  - "Carmen Chen"
+  - "Dinesh Desai"
+  - "Emma Edwards"
+  - "Frank Fitzgerald"
+apologies:
+  - "Gloria Garcia"
+guests:
+  - "Dean Harold Hughes"
+next-meeting: "May 15, 2026 at 2:00 PM"
+---
+
+# Announcements
+
+- Welcome to new faculty and staff
+- Recent achievements and awards
+- Upcoming campus events
+
+# Old Business
+
+- Program name change (BA → BS): committee report
+- Curriculum revisions for the MA program
+- Departmental strategic plan update
+
+# New Business
+
+- Fall 2026 teaching schedule
+- Committee assignments for the coming year
+- Travel and conference funding guidelines
+- Search committee updates
+
+## Reminders
+
+- Annual reports due May 15
+- Summer office coverage schedule
+- Departmental social, date TBD
+
+# Other
+
+- Open floor
+- Questions for the chair

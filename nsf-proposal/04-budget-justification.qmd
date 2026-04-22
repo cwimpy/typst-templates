@@ -1,0 +1,86 @@
+---
+title: "Your Proposal Title Here"
+---
+
+<!-- BUDGET JUSTIFICATION – 5 PAGE MAXIMUM per NSF PAPPG (II.D.2.f)
+     Provide separate justification for each budget year.
+     Justify all costs with specificity.
+
+     SALARY CAP: Per PAPPG II.D.2.f(i), NSF limits salary compensation
+     for each senior/key person to no more than TWO MONTHS of their
+     regular salary in any one year, across all NSF-funded grants.
+     Some program solicitations may override this — check yours.
+
+     Check your solicitation for other program-specific budget rules. -->
+
+# Budget Justification
+
+## Senior Personnel
+
+**PI Name (PI):** TODO: Justify salary support. Include months of effort
+per year, salary basis, and fringe benefit rate. Example: "The budget
+requests X months of summer salary in each year at the PI's current base
+rate. Fringe benefits are charged at the institutionally negotiated rate
+of XX%."
+
+## Other Personnel
+
+TODO: If applicable, justify postdoctoral researchers, graduate
+students, undergraduate students, or other personnel. Include role,
+effort level, and pay rate.
+
+## Equipment
+
+TODO: Justify any single items costing $5,000 or more (your institution's
+capital equipment threshold may differ). Explain why each item is
+necessary and not otherwise available.
+
+## Travel
+
+TODO: Justify all travel. For each trip, include destination, purpose,
+duration, and cost breakdown (airfare, lodging, per diem, ground
+transport). Use GSA per diem rates for domestic travel.
+
+<!-- Example:
+**Conference travel (Year 1):** One domestic conference trip for the PI
+to present preliminary findings. Round-trip airfare ($500), 4 nights
+lodging at GSA rate ($200/night; $800), meals and incidentals for 5 days
+($79/day; $395). Total: $1,695.
+-->
+
+## Materials and Supplies
+
+TODO: Justify computing equipment below the capital threshold, software
+licenses, consumables, and other supplies.
+
+## Other Direct Costs
+
+TODO: Justify publication costs, participant support, subawards,
+consultant services, computing time, or other direct costs.
+
+## Indirect Costs (F&A)
+
+TODO: State your institution's federally negotiated indirect cost rate,
+the MTDC base, and the resulting F&A amount for each year.
+
+<!-- Example:
+Indirect costs are calculated at the university's federally negotiated
+rate of XX% of modified total direct costs (MTDC). Year 1 MTDC: $XX,XXX;
+F&A: $X,XXX. Year 2 MTDC: $XX,XXX; F&A: $X,XXX.
+-->
+
+## Budget Summary
+
+<!-- Example summary table:
+| Category | Year 1 | Year 2 | Total |
+|:---------|-------:|-------:|------:|
+| Senior Personnel | | | |
+| Other Personnel | | | |
+| Equipment | | | |
+| Travel | | | |
+| Materials & Supplies | | | |
+| Other Direct Costs | | | |
+| Total Direct Costs | | | |
+| Indirect Costs (F&A) | | | |
+| **Total** | | | |
+-->

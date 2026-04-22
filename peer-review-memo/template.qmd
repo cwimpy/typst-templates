@@ -1,0 +1,64 @@
+---
+title: "Peer Review Memo"
+format: peer-review-memo-typst
+manuscript-title: "The Effect of Early-Life Educational Investment on Adult Labor Market Outcomes"
+manuscript-id: "JES-2026-0123"
+venue: "Journal of Example Studies"
+reviewer: "Reviewer 2"
+recommendation: "Revise and Resubmit (Major Revisions)"
+date: "2026-04-21"
+confidential: true
+---
+
+# Summary of the Submission
+
+The authors examine how early-life educational investments shape adult
+labor market outcomes, drawing on a longitudinal panel of participants
+($n = 4{,}120$) followed over two decades. The core argument is that
+the effects of early investments are both larger and more persistent
+than the existing literature suggests, and that heterogeneity across
+subgroups has been under-appreciated in prior work.
+
+Overall, this is a promising paper on an important topic. The data
+collection effort is impressive, and the research question is
+policy-relevant. However, several issues with measurement, identification,
+and framing should be addressed before the paper is ready for publication.
+
+# Major Comments
+
+1. **Construction of the primary index.** The composite measure in
+   Section 3 combines three indicators with equal weights. This choice
+   should be justified, and a sensitivity analysis using alternative
+   weighting schemes (or a factor-analytic approach) would strengthen
+   the paper.
+
+2. **Identification strategy.** The central regressions in Table 2 are
+   cross-sectional. Given the likely endogeneity of the treatment and
+   unobserved group-level characteristics, the paper would benefit from
+   either a within-group fixed-effects specification or, at minimum, a
+   more thorough discussion of the assumptions required for the
+   estimates to be interpreted causally.
+
+3. **Scope of the sample.** The sample is restricted to participants
+   who completed all three waves. It would be useful to see how
+   attrition patterns relate to the key covariates, and whether the
+   main results are robust to alternative handling of missing data.
+
+# Minor Comments
+
+- Page 4, paragraph 2: the citation to Smith et al. appears to be
+  missing a year.
+- Table 1: standard errors should be clustered at the appropriate level
+  given the likely correlation structure.
+- Figure 3 would be clearer with a logarithmic x-axis.
+- The discussion section repeats several points from the introduction;
+  I encourage the authors to tighten this considerably.
+- Typo on p. 17: "mesurement" → "measurement."
+
+# Assessment of Contribution
+
+The paper makes a genuine contribution to our understanding of the
+long-run effects of early investments, a topic that has received
+increasing but still limited systematic attention. With revisions
+addressing the measurement and identification concerns above, I believe
+it will be a strong candidate for publication.

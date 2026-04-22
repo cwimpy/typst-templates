@@ -1,0 +1,37 @@
+---
+title: "Your Proposal Title Here"
+---
+
+<!-- FACILITIES, EQUIPMENT, AND OTHER RESOURCES – No page limit (PAPPG II.D.2.g)
+     Per NSF PAPPG: Describe resources available to perform the effort
+     proposed. Should satisfy both Intellectual Merit and Broader Impacts
+     review criteria. Include an aggregated description of internal and
+     external resources. Must be narrative — no quantifiable financial
+     information (that belongs in the budget).
+
+     UNFUNDED COLLABORATIONS (PAPPG II.D.2.d(iv)):
+     If individuals not in the budget contribute substantially to the
+     project, describe their roles here and provide a letter of
+     collaboration in supplementary docs using this format:
+       "If the proposal submitted by Dr. [PI name] entitled [title]
+       is selected for funding by NSF, it is my intent to collaborate
+       and/or commit resources as detailed in the Project Description
+       or the Facilities, Equipment and Other Resources section."
+     Letters should NOT contain endorsements or evaluation. -->
+
+# Facilities, Equipment, and Other Resources
+
+TODO: Describe the facilities and resources available at your
+institution to support the proposed research. Include:
+
+- Office and laboratory space
+- Computing infrastructure (existing)
+- Library and electronic resources
+- Administrative support
+- Relevant centers, institutes, or programs
+
+TODO: If the project will acquire new equipment or infrastructure,
+describe what will be added and how it complements existing resources.
+
+TODO: Note any gaps in current infrastructure that the proposed project
+addresses.

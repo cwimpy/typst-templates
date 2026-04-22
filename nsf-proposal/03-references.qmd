@@ -1,0 +1,28 @@
+---
+title: "Your Proposal Title Here"
+bibliography: references.bib
+csl: american-political-science-association.csl
+nocite: |
+  @*
+citeproc: true
+---
+
+# References Cited
+
+<!-- REFERENCES CITED – No page limit.
+     Uploaded separately to Research.gov.
+
+     citeproc: true forces Pandoc (not Typst) to process the bibliography,
+     which correctly handles nocite: '@*' to include all bib entries.
+     The {#refs} div below is where Pandoc places the formatted list.
+     The raw Typst block sets hanging indentation for reference entries.
+
+     Add your citations to references.bib. Any entry cited in
+     project-description.qmd or listed here via nocite will appear. -->
+
+```{=typst}
+#set par(hanging-indent: 1.5em, first-line-indent: 0em)
+```
+
+::: {#refs}
+:::

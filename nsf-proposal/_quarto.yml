@@ -1,0 +1,43 @@
+# NSF Proposal – Quarto Project Configuration
+# Formatting follows NSF PAPPG (NSF 24-1) guidelines.
+#
+# Upload order in Research.gov:
+#   1. Project Summary          → 01-project-summary.pdf
+#   2. Project Description      → 02-project-description.pdf
+#   3. References Cited         → 03-references.pdf
+#   4. Budget                   → (built in Research.gov)
+#   5. Budget Justification     → 04-budget-justification.pdf
+#   6. Facilities & Resources   → 05-facilities.pdf
+#   7. Data Management Plan     → 06-data-management.pdf
+#   8. Synergistic Activities   → 07-synergistic-activities.pdf
+#   9. Mentoring Plan           → 08-mentoring-plan.pdf (if applicable)
+#  10. Current & Pending        → submitted via SciENcv (not compiled here)
+#  11. Supplementary Docs       → letters uploaded as PDFs separately
+
+project:
+  type: default
+  output-dir: _output
+  render:
+    - 01-project-summary.qmd
+    - 02-project-description.qmd
+    - 03-references.qmd
+    - 04-budget-justification.qmd
+    - 05-facilities.qmd
+    - 06-data-management.qmd
+    - 07-synergistic-activities.qmd
+    - 08-mentoring-plan.qmd
+    - 09-current-pending.qmd
+    - 10-pi-summary.qmd
+    - checklist.qmd
+
+# ── Shared format defaults ────────────────────────────────────────────────────
+# All documents inherit these via the nsf-proposal extension.
+# Individual .qmd files can override any setting in their own YAML.
+format:
+  nsf-proposal-typst: default
+
+# ── Execution ─────────────────────────────────────────────────────────────────
+execute:
+  echo: false
+  warning: false
+  message: false

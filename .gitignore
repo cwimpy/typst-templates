@@ -1,0 +1,27 @@
+# Quarto
+/.quarto/
+**/_freeze/
+**/.quarto/
+**/_output/
+
+# Rendered outputs (keep sources, not build artifacts)
+**/template.pdf
+**/template.typ
+**/*_files/
+**/*.typ-freeze
+
+# NSF-proposal specific build artifacts
+nsf-proposal/_output/
+
+# Claude Code local config (per-user, not for the repo)
+.claude/
+**/.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp

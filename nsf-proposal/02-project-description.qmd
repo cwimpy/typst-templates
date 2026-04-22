@@ -1,0 +1,92 @@
+---
+title: "Your Proposal Title Here"
+bibliography: references.bib
+csl: american-political-science-association.csl
+suppress-bibliography: true
+---
+
+<!-- PROJECT DESCRIPTION – 15 PAGE MAXIMUM (standard proposals)
+     Check your solicitation for specific page limits.
+     Includes text, figures, and tables.
+
+     Required elements per NSF PAPPG:
+       - Motivation and context
+       - Goals and objectives
+       - Detailed research plan
+       - Expected outcomes and timeline
+       - Explicit Intellectual Merit section
+       - Explicit Broader Impacts section
+       - Results from Prior NSF Support
+
+     Citations appear in-text here. The reference list is printed
+     separately via references.qmd (suppress-bibliography: true). -->
+
+# Project Description
+
+## Introduction and Motivation
+
+TODO: Establish the research context and gap your proposal addresses.
+Cite relevant literature to demonstrate your command of the field
+[@example2024].
+
+## Research Plan
+
+### Aim 1: TODO
+
+TODO: Describe the first research aim. Include objectives, methods,
+data sources, analytical approach, and expected outcomes.
+
+### Aim 2: TODO
+
+TODO: Describe the second research aim.
+
+### Aim 3: TODO
+
+TODO: Describe the third research aim.
+
+## Data and Ethical Considerations
+
+TODO: Describe the data you will use, any human subjects considerations,
+and how you will address ethical issues.
+
+## Feasibility and Risk Mitigation
+
+TODO: Address potential challenges and your contingency plans.
+
+## Expected Outcomes
+
+TODO: Describe the tangible products (datasets, publications, software)
+and their significance.
+
+## Intellectual Merit
+
+TODO: Synthesize how the proposed work advances knowledge. This should
+go beyond restating the aims — explain the conceptual contribution.
+
+## Broader Impacts
+
+TODO: Describe impacts on education, infrastructure, broadening
+participation, and society. Be specific about activities and mechanisms.
+
+## Timeline and Work Plan
+
+TODO: Provide a timeline with milestones. Consider including a Gantt
+chart or milestone table.
+
+<!-- Example milestone table:
+| Phase | Activity | Deliverable |
+|:------|:---------|:------------|
+| Year 1, Q1-Q2 | Data collection | Raw dataset |
+| Year 1, Q3-Q4 | Analysis | Draft manuscript |
+| Year 2, Q1-Q2 | Validation | Revised analyses |
+| Year 2, Q3-Q4 | Dissemination | Published articles |
+-->
+
+## Results from Prior NSF Support
+
+TODO: If you have received prior NSF support, describe the results.
+Include award number, amount, period, and title. Discuss intellectual
+merit and broader impacts of prior work, and list publications.
+
+If no prior NSF support, state: "The PI has not received prior NSF
+support."

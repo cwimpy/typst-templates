@@ -1,0 +1,17 @@
+title: Sign-in Sheet
+author: Cameron Wimpy
+version: 0.1.0
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+    typst:
+      template-partials:
+        - typst-template.typ
+        - typst-show.typ
+      papersize: us-letter
+      margin:
+        x: 0.75in
+        y: 0.75in
+      fontsize: 10pt
+      toc: false
+      section-numbering: ""

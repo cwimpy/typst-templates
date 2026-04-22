@@ -1,0 +1,28 @@
+---
+title: "Your Proposal Title Here"
+subtitle: "Current and Pending Support"
+author:
+  - name: "Your Name"
+    affiliations:
+      - name: "Your Institution"
+---
+
+<!-- CURRENT AND PENDING SUPPORT
+     List ALL current and pending support for the PI.
+     Required fields: project title, source, amount, dates, person-months/year.
+
+     NSF now uses the SciENcv system for C&P — confirm with your
+     sponsored programs office whether to submit via SciENcv or
+     upload a PDF directly. If using SciENcv, you can delete this file. -->
+
+# Current and Pending Support
+
+| Status | Source | Title | Amount | Dates | Person-Months/Yr |
+|:-------|:-------|:------|-------:|:------|------------------:|
+| Current | <!-- SOURCE --> | <!-- TITLE --> | $<!-- AMOUNT --> | <!-- START–END --> | <!-- X --> |
+| Pending | NSF (solicitation #) | Your Proposal Title | $TODO | TODO–TODO | TODO |
+
+<!-- Add additional rows as needed. If no current support, replace the
+     Current row with:
+     | None | — | — | — | — | — |
+-->

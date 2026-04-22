@@ -1,0 +1,6 @@
+/.quarto/
+_output/
+*_files/
+**/*.quarto_ipynb
+.DS_Store
+.claude/

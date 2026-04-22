@@ -1,0 +1,91 @@
+---
+format: report-typst
+title: "Project Title Goes Here"
+subtitle: "Planning Grant Final Report"
+report-author: "Jane Doe, Ph.D."
+author-email: "jane.doe@university.edu"
+author-affiliation: "Director, Example Institute"
+institution: "Your University"
+date: "2026-04-21"
+# logo: "assets/logo.png"         # optional — path to your institution/project logo
+# accent-color: "cc092f"          # hex without the # — defaults to a deep red
+running-title: "Project Final Report"
+running-footer: "Example Institute Planning Grant | Your University"
+---
+
+# Executive Summary
+
+One or two paragraphs summarizing the scope of the report and the key
+conclusions. Readers who only read this section should still come away
+with an accurate picture of what the project accomplished, what was
+learned, and what should happen next.
+
+```{=typst}
+#callout(type: "important", title: "Bottom Line")[
+  A single sentence or short bulleted list capturing the most important
+  takeaway. This is the "if you read nothing else" version.
+]
+```
+
+# Background
+
+Brief framing of the project: what problem it was meant to address, who
+funded it, the time period covered, and any institutional context that
+helps the reader orient. Two or three short paragraphs is plenty.
+
+# Progress on Proposed Work
+
+## Objective 1
+
+Describe the objective as proposed, then what was actually done and what
+was learned. Use level-2 headings for each major objective.
+
+## Objective 2
+
+Parallel structure helps readers scan. Include numbers where you have
+them — participants, sites, dollars, publications — and cite specific
+outputs (meetings held, reports produced, partnerships formed) where you
+can.
+
+```{=typst}
+#callout(type: "tip", title: "Why it worked")[
+  Short reflection on what contributed to success on this objective.
+  Optional — use when the lesson is durable beyond this project.
+]
+```
+
+# Outcomes
+
+Summarize the concrete outputs of the project. A bulleted list is often
+the right format here:
+
+- Partnerships established
+- Events hosted
+- Publications / reports produced
+- Data collected
+- Institutional commitments secured
+
+# Lessons Learned
+
+Candid reflection on what worked, what didn't, and what you'd do
+differently. Funders and future collaborators find this section more
+useful than a purely celebratory summary.
+
+```{=typst}
+#callout(type: "warning", title: "Caveat")[
+  Use the warning style for important caveats, limitations, or points
+  where readers might otherwise over-interpret the findings.
+]
+```
+
+# Next Steps
+
+What comes after this project. If you are seeking continuation funding,
+describe the next phase in concrete terms (activities, partners, rough
+timeline). If the work is closing, describe how the outputs will be
+sustained or handed off.
+
+# Acknowledgments
+
+Brief thanks to funders, collaborators, advisory board members, and
+institutional support.

@@ -1,0 +1,32 @@
+---
+title: "Your Proposal Title Here"
+---
+
+<!-- SYNERGISTIC ACTIVITIES – 1 PAGE MAXIMUM per person (PAPPG II.D.2.h(iv))
+     Each senior/key person must provide a document of up to one page
+     with up to five distinct examples demonstrating the broader impact
+     of their professional and scholarly activities.
+
+     Submit via Research.gov or Grants.gov as part of the senior/key
+     personnel documents. Examples include: innovations in teaching,
+     broadening participation, community engagement, professional
+     service, contributions to science of learning, policy impact. -->
+
+## Synergistic Activities
+
+**Name:** TODO: Your Name\
+**ORCID iD:** TODO: 0000-0000-0000-0000\
+**Position Title:** TODO: Your Title\
+**Primary Organization and Location:** TODO: Your Institution; City, State
+
+# Synergistic Activities
+
+1. TODO: Describe a synergistic activity demonstrating broader impact.
+
+2. TODO: Describe a second activity.
+
+3. TODO: Describe a third activity.
+
+4. TODO: Describe a fourth activity.
+
+5. TODO: Describe a fifth activity.

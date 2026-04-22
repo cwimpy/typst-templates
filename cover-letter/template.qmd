@@ -1,0 +1,37 @@
+---
+title: "Cover Letter"
+format: cover-letter-typst
+sender-name: "Jane Doe"
+sender-title: "Associate Professor"
+sender-affiliation: "Department of Example Studies, Example University"
+sender-address: "100 University Drive, City, ST 00000"
+sender-email: "jane.doe@example.edu"
+recipient-name: "Dr. Richard Editor"
+recipient-title: "Editor-in-Chief"
+recipient-journal: "Journal of Example Studies"
+manuscript-title: "The Effect of Early-Life Educational Investment on Adult Labor Market Outcomes"
+date: "2026-04-21"
+---
+
+Please find enclosed our manuscript, *"The Effect of Early-Life
+Educational Investment on Adult Labor Market Outcomes,"* which we submit
+for consideration in the *Journal of Example Studies*.
+
+The paper examines how early educational investments shape adult labor
+market outcomes, drawing on a longitudinal panel of 4,120 participants
+followed over two decades. We show that the effects of early investments
+are both larger and more persistent than the existing literature
+suggests, and that heterogeneity across subgroups has been
+under-appreciated in prior work. The findings have direct implications
+for ongoing debates about the design of early-investment programs.
+
+The manuscript is approximately 9,500 words (including references,
+tables, and figures). It is original work that has not been published
+elsewhere and is not under review at another journal. All authors have
+approved the submission and there are no conflicts of interest to
+disclose. Replication data and code will be made available upon
+acceptance.
+
+We believe the paper will be of interest to readers working on
+educational policy, labor economics, and long-run program evaluation.
+Thank you for your consideration. We look forward to your response.

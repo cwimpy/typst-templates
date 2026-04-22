@@ -1,0 +1,82 @@
+---
+title: "Paper Title"
+# subtitle: "Optional Subtitle"
+format: working-paper-typst
+author:
+  - name: "Author One"
+    affiliations:
+      - name: "Department, Institution"
+    email: "author1@institution.edu"
+    orcid: "0000-0000-0000-0000"
+  - name: "Author Two"
+    affiliations:
+      - name: "Department, Institution"
+    email: "author2@institution.edu"
+    orcid: "0000-0000-0000-0000"
+date: "today"
+date-format: "MMMM DD, YYYY"
+thanks: "Acknowledgments, funding, data availability, and replication notes go here."
+abstract: |
+  Abstract text goes here. Typically 150–250 words. Summarize the research question,
+  approach, and main findings.
+keywords: ["keyword one", "keyword two", "keyword three", "keyword four"]
+bibliography: references.bib
+bibliographystyle: apsa.csl
+biblio-title: "References"
+# toc: true                   # uncomment to enable table of contents
+# section-numbering: "1.1"    # uncomment to number sections
+---
+
+# Introduction
+
+Opening paragraph establishing the research question and its significance.
+
+Second paragraph situating the contribution within the existing literature.
+
+Third paragraph previewing the argument, data, and findings.
+
+# Theory and Literature
+
+## Existing Work
+
+Survey of the relevant literature.
+
+## Argument
+
+Statement of the theoretical argument and derivation of testable hypotheses.
+
+*H1:* Hypothesis one.
+
+*H2:* Hypothesis two.
+
+# Research Design and Data
+
+## Data
+
+Description of the data sources, units of analysis, and time period.
+
+## Measures
+
+Description of the dependent variable, key independent variable(s), and controls.
+
+## Method
+
+Description of the estimation strategy and why it is appropriate for the research question.
+
+# Results
+
+Presentation and interpretation of empirical results.
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# Load packages and data here
+# library(tidyverse)
+
+```
+
+# Conclusion
+
+Summary of findings, limitations, and directions for future research.

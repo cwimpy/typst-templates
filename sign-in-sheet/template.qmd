@@ -1,0 +1,88 @@
+---
+title: "Department Chairs Sign-in Sheet"
+format: sign-in-sheet-typst
+meeting-date: "2026-04-17"
+meeting-time: "1:00 p.m."
+meeting-location: "Meeting Room 201"
+---
+
+# College of Example Arts
+
+```{=typst}
+#signatures(
+  "Department of History",
+  "Department of English",
+  "Department of Philosophy",
+  "Department of Classics",
+)
+```
+
+# College of Example Sciences
+
+```{=typst}
+#signatures(
+  "Department of Biology",
+  "Department of Chemistry",
+  "Department of Physics",
+  "Department of Mathematics",
+  "Department of Computer Science",
+)
+```
+
+# College of Business
+
+```{=typst}
+#signatures(
+  "Department of Accounting",
+  "Department of Economics & Finance",
+  "Department of Management & Marketing",
+  "Department of Information Systems",
+)
+```
+
+# College of Education
+
+```{=typst}
+#signatures(
+  "Department of Teacher Education",
+  "Department of Educational Leadership",
+  "Department of Kinesiology",
+  "Department of Psychology & Counseling",
+)
+```
+
+{{< pagebreak >}}
+
+# College of Engineering
+
+```{=typst}
+#signatures(
+  "Civil Engineering",
+  "Electrical Engineering",
+  "Mechanical Engineering",
+  "Computer Science",
+  "Engineering Management",
+)
+```
+
+# College of Nursing and Health Professions
+
+```{=typst}
+#signatures(
+  "School of Nursing",
+  "Social Work",
+  "Physical Therapy",
+  "Occupational Therapy",
+  "Communication Disorders",
+  "Health Sciences",
+)
+```
+
+# University College
+
+```{=typst}
+#signatures(
+  "Transitions Studies",
+  "Non-Traditional Studies",
+)
+```

@@ -1,0 +1,19 @@
+title: Policy Brief
+author: Cameron Wimpy
+version: 0.1.0
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+    typst:
+      template-partials:
+        - typst-template.typ
+        - typst-show.typ
+      papersize: us-letter
+      margin:
+        left: 0.9in
+        right: 0.9in
+        top: 0.6in
+        bottom: 0.9in
+      fontsize: 10.5pt
+      toc: false
+      section-numbering: ""

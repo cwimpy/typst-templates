@@ -1,0 +1,242 @@
+---
+title: "NSF Proposal Checklist"
+subtitle: "Auto-generated status report"
+date: today
+format:
+  nsf-proposal-typst:
+    fontsize: 10pt
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r setup}
+library(tidyverse)
+library(knitr)
+
+# ── Helper functions ──────────────────────────────────────────────────────────
+
+# Read a file safely; return "" if it doesn't exist
+read_safe <- function(path) {
+  if (file.exists(path)) {
+    paste(readLines(path, warn = FALSE), collapse = "\n")
+  } else {
+    ""
+  }
+}
+
+# Count non-empty lines as a rough proxy for content length
+line_count <- function(text) {
+  lines <- str_split(text, "\n")[[1]]
+  sum(str_length(str_trim(lines)) > 0)
+}
+
+# Check whether any of a vector of patterns appears in text
+any_match <- function(text, patterns) {
+  any(map_lgl(patterns, ~ str_detect(text, fixed(.x, ignore_case = TRUE))))
+}
+
+# Check whether ALL patterns appear in text
+all_match <- function(text, patterns) {
+  all(map_lgl(patterns, ~ str_detect(text, fixed(.x, ignore_case = TRUE))))
+}
+
+# ── Document registry ─────────────────────────────────────────────────────────
+# Update this table to match your proposal's documents.
+docs <- tribble(
+  ~key,                ~label,                                 ~file,                       ~page_limit, ~required,
+  "summary",           "Project Summary",                      "01-project-summary.qmd",        1,           TRUE,
+  "description",       "Project Description",                  "02-project-description.qmd",    15,          TRUE,
+  "references",        "References Cited",                     "03-references.qmd",             NA,          TRUE,
+  "budget",            "Budget Justification",                 "04-budget-justification.qmd",   5,           TRUE,
+  "facilities",        "Facilities, Equipment & Resources",    "05-facilities.qmd",             NA,          TRUE,
+  "data_mgmt",         "Data Management and Sharing Plan",     "06-data-management.qmd",        2,           TRUE,
+  "synergistic",       "Synergistic Activities (1 pg/person)",  "07-synergistic-activities.qmd", 1,          TRUE,
+  "mentoring",         "Mentoring Plan (1 page max)",          "08-mentoring-plan.qmd",         1,           FALSE,
+  "current_pending",   "Current and Pending (SciENcv)",         "09-current-pending.qmd",       NA,          TRUE,
+  "pi_summary",        "PI Summary",                           "10-pi-summary.qmd",             NA,          FALSE,
+  "letters",           "Supplementary Letters",                 NA,                              NA,          TRUE
+)
+
+# ── Placeholder patterns to flag ──────────────────────────────────────────────
+# These indicate content the PI still needs to fill in.
+# Add your own patterns as needed.
+placeholder_patterns <- c(
+  "TODO",
+  "<!-- SOURCE -->",
+  "<!-- TITLE -->",
+  "<!-- AMOUNT -->",
+  "<!-- START",
+  "<!-- X -->",
+  "XX,XXX",
+  "Start–End",
+  "X months",
+  "[citations needed]",
+  "placeholder",
+  "Your Proposal Title Here",
+  "Your Name",
+  "Your Institution",
+  "Your Title",
+  "0000-0000-0000-0000"
+)
+
+# ── Required section patterns per document ────────────────────────────────────
+# Customize these to match your solicitation's requirements.
+required_sections <- list(
+  summary = c(
+    "Intellectual Merit",
+    "Broader Impacts"
+  ),
+  description = c(
+    "Intellectual Merit",
+    "Broader Impacts",
+    "Results from Prior NSF Support",
+    "Research Plan"
+  ),
+  references = c(
+    "#refs"
+  ),
+  budget = c(
+    "Senior Personnel",
+    "Travel",
+    "Indirect Costs"
+  ),
+  data_mgmt = c(
+    "Types of Data",
+    "Access and Sharing",
+    "Preservation"
+  )
+)
+
+# ── Compute status for each document ──────────────────────────────────────────
+doc_status <- docs |>
+  mutate(
+    exists        = map_lgl(file, ~ !is.na(.x) && file.exists(.x)),
+    content       = map_chr(file, ~ if (!is.na(.x)) read_safe(.x) else ""),
+    n_lines       = map_int(content, line_count),
+    has_todo      = map_lgl(content, ~ any_match(.x, placeholder_patterns)),
+    n_placeholders = map_int(content, function(txt) {
+      sum(map_int(placeholder_patterns, ~ str_count(txt, fixed(.x, ignore_case = TRUE))))
+    }),
+    sections_ok   = map2_lgl(key, content, function(k, txt) {
+      if (k %in% names(required_sections)) {
+        all_match(txt, required_sections[[k]])
+      } else {
+        NA
+      }
+    }),
+    missing_sections = map2_chr(key, content, function(k, txt) {
+      if (k %in% names(required_sections)) {
+        missing <- keep(required_sections[[k]], ~ !str_detect(txt, fixed(.x, ignore_case = TRUE)))
+        if (length(missing) == 0) "—" else paste(missing, collapse = "; ")
+      } else {
+        "—"
+      }
+    })
+  )
+```
+
+## Document Status
+
+*Rendered automatically from source files on `r format(Sys.Date(), "%B %d, %Y")`.*
+
+```{r doc-table}
+doc_status |>
+  transmute(
+    Document       = label,
+    `Page Limit`   = if_else(is.na(page_limit), "none", as.character(page_limit)),
+    Required       = if_else(required, "yes", "no"),
+    `File Exists`  = case_when(
+      is.na(file)  ~ "n/a",
+      exists       ~ "yes",
+      TRUE         ~ "NO"
+    ),
+    Placeholders   = if_else(
+      is.na(file), "—",
+      if_else(has_todo, paste0("YES (", n_placeholders, ")"), "clear")
+    ),
+    `Req. Sections` = if_else(
+      is.na(sections_ok), "—",
+      if_else(sections_ok, "yes", "see below")
+    )
+  ) |>
+  kable(align = c("l", "c", "c", "c", "c", "c"))
+```
+
+## Placeholder Details
+
+*Documents with unfilled placeholder text:*
+
+```{r placeholders-detail}
+flagged <- doc_status |>
+  filter(!is.na(file), has_todo) |>
+  select(label, content) |>
+  mutate(
+    instances = map2(label, content, function(lbl, txt) {
+      lines <- str_split(txt, "\n")[[1]]
+      tibble(
+        Document = lbl,
+        Line     = seq_along(lines),
+        Text     = lines
+      ) |>
+        filter(map_lgl(Text, ~ any_match(.x, placeholder_patterns))) |>
+        mutate(Text = str_trunc(str_trim(Text), 80))
+    })
+  ) |>
+  pull(instances) |>
+  bind_rows()
+
+if (nrow(flagged) == 0) {
+  cat("No placeholders detected. All documents appear complete.\n")
+} else {
+  flagged |>
+    kable(align = c("l", "r", "l"))
+}
+```
+
+## Missing Required Sections
+
+```{r missing-sections}
+missing_tbl <- doc_status |>
+  filter(!is.na(file), !is.na(sections_ok), !sections_ok) |>
+  select(Document = label, `Missing Sections` = missing_sections)
+
+if (nrow(missing_tbl) == 0) {
+  cat("All required sections detected in all documents.\n")
+} else {
+  missing_tbl |> kable(align = c("l", "l"))
+}
+```
+
+## NSF Upload Checklist
+
+*Use this checklist when submitting in Research.gov.*
+
+```{r upload-checklist}
+upload_items <- tribble(
+  ~Step, ~Action, ~File,
+  "1",  "Upload Project Summary (1 page max)",                  "01-project-summary.pdf",
+  "2",  "Upload Project Description (15 pages max)",           "02-project-description.pdf",
+  "3",  "Upload References Cited",                             "03-references.pdf",
+  "4",  "Enter budget in Research.gov budget tool",             "(online — no upload)",
+  "5",  "Upload Budget Justification (5 pages max)",           "04-budget-justification.pdf",
+  "6",  "Upload Facilities, Equipment & Other Resources",      "05-facilities.pdf",
+  "7",  "Upload Data Management and Sharing Plan (2 pg max)",  "06-data-management.pdf",
+  "8",  "Upload Synergistic Activities (1 pg/person)",         "07-synergistic-activities.pdf",
+  "9",  "Upload Mentoring Plan (1 page max, if applicable)",   "08-mentoring-plan.pdf",
+  "10", "Submit Biographical Sketches via SciENcv",            "(SciENcv — no page limit)",
+  "11", "Submit Current and Pending via SciENcv",              "(SciENcv)",
+  "12", "Submit Collaborators & Other Affiliations",           "(NSF Excel template)",
+  "13", "Upload supplementary letters of collaboration",       "(separate PDFs)",
+  "14", "Verify cover sheet fields",                           "(Research.gov)",
+  "15", "Submit by 5 p.m. submitting org's local time",        "Check your solicitation"
+)
+
+upload_items |>
+  kable(align = c("c", "l", "l"))
+```
+
+---
+
+*This checklist is generated automatically by `checklist.qmd`. Re-render after editing any proposal document to get an updated status report. Run `make checklist` or `quarto render checklist.qmd`.*

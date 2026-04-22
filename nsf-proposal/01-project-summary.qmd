@@ -1,0 +1,39 @@
+---
+title: "Your Proposal Title Here"
+---
+
+<!-- PROJECT SUMMARY – 1 PAGE MAXIMUM
+     Required elements per NSF PAPPG:
+       - Overview of proposed activity
+       - Statement of objectives and methods
+       - Significance of the proposed activity
+       - Separate Intellectual Merit paragraph
+       - Separate Broader Impacts paragraph
+
+     Some solicitations require additional elements (e.g., host site info
+     for fellowship programs). Check your solicitation's requirements.
+
+     Keep to one page. Research.gov will reject summaries exceeding
+     the page limit. -->
+
+### Overview
+
+TODO: Write a concise overview of the proposed research. Include the
+research context, objectives, methods, expected outcomes, and
+significance. This should be understandable to a scientifically literate
+reader outside your subfield.
+
+### Intellectual Merit
+
+TODO: Describe the potential to advance knowledge within and across
+fields. What fundamental questions does this address? What is novel
+about the approach? Why is the PI well-positioned to conduct this work?
+
+### Broader Impacts
+
+TODO: Describe the potential to benefit society and contribute to
+desired societal outcomes. Consider impacts on education, broadening
+participation, infrastructure, and public engagement.
+
+<!-- Optional: Some solicitations request keywords. Delete if not needed. -->
+**Keywords:** TODO: keyword1; keyword2; keyword3

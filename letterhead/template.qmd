@@ -1,0 +1,50 @@
+---
+format: letterhead-typst
+sender-name: "Dr. Jane Doe"
+sender-qualifications: "PhD"
+sender-position: "Associate Professor"
+sender-department: "Department of Example Studies"
+sender-institution: "Your University | City, ST"
+sender-email: "jane.doe@university.edu"
+sender-phone: "(555) 555-0100"
+sender-website: "janedoe.example"
+# Logos (optional — uncomment and point at your own files)
+# logo-header: "assets/department-logo.png"
+# logo-footer: "assets/accreditation-mark.png"
+# signature: "assets/signature.png"
+date: "2026-04-21"
+recipient:
+  - "Dr. Richard Roe"
+  - "Chair, Promotion and Tenure Committee"
+  - "Flagship University"
+  - "100 Main Street"
+  - "Capital City, ST 00000"
+opening: "Dear Dr. Roe,"
+closing: "Sincerely,"
+# bold-title: "Letter of Recommendation"   # optional centered bold title
+# sub-header: "College of Arts and Sciences"  # optional line below the top logo
+# encl: "Curriculum vitae"
+# cc: "Dr. Department Chair"
+# ps: "Please let me know if you need any additional materials."
+---
+
+It is my pleasure to write in support of John Smith, who I understand is
+being considered for promotion to the rank of Professor at your institution.
+I have known John for the past eight years as a collaborator and colleague
+in our shared field.
+
+John's record of scholarship is exemplary. His 2023 monograph on the
+subject has already become a standard reference, and his articles in
+leading disciplinary journals demonstrate a sustained commitment to
+rigorous, agenda-setting research. Beyond productivity, the work shows
+clear intellectual leadership: several of his papers open new avenues
+that the field continues to build on.
+
+I can also speak to John's effectiveness as a mentor and citizen of the
+profession. His students have gone on to strong placements, and he has
+served on the editorial boards of two of our discipline's flagship
+journals. In departmental discussions I have been part of, his judgment
+has been consistently thoughtful and collegial.
+
+I recommend John's promotion without reservation, and I am happy to
+answer any further questions the committee may have.

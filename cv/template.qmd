@@ -1,0 +1,125 @@
+---
+format: cv-typst
+firstname: "Jane"
+lastname: "Doe"
+affiliation: "Department of Example Studies | Your University"
+address: "123 College Ave, City, ST 12345"
+phone: "(555) 555-0100"
+email: "jane.doe@university.edu"
+websiteurl: "https://janedoe.example"
+websitedisplay: "janedoe.example"
+github: "https://github.com/janedoe"
+githubhandle: "janedoe"
+linkedin: "https://linkedin.com/in/janedoe"
+linkedinhandle: "janedoe"
+twitter: "https://x.com/janedoe"
+twitterhandle: "janedoe"
+orcidurl: "https://orcid.org/0000-0000-0000-0000"
+orcidhandle: "0000-0000-0000-0000"
+google-scholar: "https://scholar.google.com/citations?user=XXXX"
+google-scholarhandle: "Google Scholar"
+papersize: us-letter
+---
+
+# Employment
+
+```{=typst}
+#cv-entry(
+  title: "Associate Professor",
+  organization: "Your University",
+  location: "City, ST",
+  dates: "2023 – Present",
+)
+
+#cv-entry(
+  title: "Assistant Professor",
+  organization: "Your University",
+  location: "City, ST",
+  dates: "2017 – 2023",
+)
+```
+
+# Education
+
+```{=typst}
+#cv-entry(
+  title: "Ph.D., Example Studies",
+  organization: "Flagship University",
+  location: "City, ST",
+  dates: "2017",
+  description: "Dissertation: The Title of the Dissertation",
+)
+
+#cv-entry(
+  title: "B.A., Example Studies",
+  organization: "Another University",
+  location: "City, ST",
+  dates: "2011",
+)
+```
+
+# Publications
+
+```{=typst}
+#pub-entry(
+  authors: "*Doe, Jane*, and John Smith",
+  title: "The Effect of X on Y: A Study",
+  venue: "Journal of Example Studies",
+  year: "2024",
+  doi: "10.1000/xyz123",
+)
+
+#pub-entry(
+  authors: "*Doe, Jane*",
+  title: "An Earlier Paper",
+  venue: "Another Journal",
+  year: "2021",
+)
+```
+
+# Teaching
+
+```{=typst}
+#teaching-entry(
+  course: "Introduction to Example Studies",
+  institution: "Your University",
+  terms: "Fall 2023, Fall 2024",
+)
+
+#teaching-entry(
+  course: "Advanced Methods",
+  institution: "Your University",
+  terms: "Spring 2024",
+)
+```
+
+# Service
+
+```{=typst}
+#service-list((
+  "Reviewer: Journal of Example Studies (2023 – Present)",
+  "Program Committee: Example Conference (2024)",
+  "Departmental Curriculum Committee (2022 – 2024)",
+))
+```
+
+# References
+
+```{=typst}
+#grid(
+  columns: (1fr, 1fr),
+  column-gutter: 2em,
+  reference-entry(
+    name: "Prof. First Reference",
+    title: "Professor of Example Studies",
+    institution: "Flagship University",
+    email: "first.ref@flagship.edu",
+  ),
+  reference-entry(
+    name: "Prof. Second Reference",
+    title: "Professor of Example Studies",
+    institution: "Another University",
+    email: "second.ref@another.edu",
+  ),
+)
+```
