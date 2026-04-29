@@ -73,13 +73,29 @@ Then cite with Quarto's `@citekey` syntax. The rendered reference list will
 appear wherever you place a `# References` heading that resolves to the
 bibliography, following your selected CSL.
 
-## Install as an extension
+## Getting started
+
+### Start a new CV from this template
+
+```bash
+quarto use template cwimpy/typst-templates/cv
+```
+
+Run this from the *parent* directory where you want the CV project to live.
+Quarto will prompt for a name and create a new folder with `template.qmd` and
+the format extension. Render with:
+
+```bash
+quarto render template.qmd
+```
+
+### Or add just the format to an existing project
 
 ```bash
 quarto add cwimpy/typst-templates/cv
 ```
 
-Then: `format: cv-typst`
+Then set `format: cv-typst` in your document's YAML.
 
 ## Customization
 

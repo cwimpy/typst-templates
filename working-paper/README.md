@@ -39,10 +39,26 @@ bibliography pipeline.
 | `section-numbering` | e.g. `"1.1"` to number sections; omit to disable |
 | `mainfont`, `fontsize`, `papersize` | Standard Quarto overrides |
 
-## Install as an extension
+## Getting started
+
+### Start a new paper from this template
+
+```bash
+quarto use template cwimpy/typst-templates/working-paper
+```
+
+Run this from the *parent* directory where you want the paper to live. Quarto
+will prompt for a name and create a new folder containing `template.qmd`,
+`references.bib`, `apsa.csl`, and the format extension. Render with:
+
+```bash
+quarto render template.qmd
+```
+
+### Or add just the format to an existing project
 
 ```bash
 quarto add cwimpy/typst-templates/working-paper
 ```
 
-Then: `format: working-paper-typst`
+Then set `format: working-paper-typst` in your document's YAML.

@@ -37,15 +37,28 @@ LaTeX toolchain required.
 
 ## Using a template
 
-Each template ships as a Quarto extension. From the template's folder, render
-the example:
+### Start a new project from a template (recommended)
+
+`quarto use template` copies the example `.qmd` and any supporting files
+(bibliography, CSL, etc.) into a fresh folder *and* installs the format
+extension:
 
 ```bash
-cd peer-review-memo
+quarto use template cwimpy/typst-templates/peer-review-memo
+```
+
+Run this from the *parent* directory where you want the project to live —
+Quarto will prompt for a name and create a new folder. Then:
+
+```bash
+cd <name-you-chose>
 quarto render template.qmd
 ```
 
-To use a template in your own project, install it as an extension:
+### Add just the format to an existing project
+
+If you already have a Quarto project and only want the format extension (no
+starter files):
 
 ```bash
 quarto add cwimpy/typst-templates/peer-review-memo
@@ -59,6 +72,8 @@ title: "My review"
 format: peer-review-memo-typst
 ---
 ```
+
+Replace `peer-review-memo` with any of the template names listed above.
 
 ## Requirements
 

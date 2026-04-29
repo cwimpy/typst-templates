@@ -63,10 +63,26 @@ subfolder) and point these fields at the relative paths.
 - Adjust margins / footer depth: edit `set page(...)` in the same file
 - Reposition logos: adjust the `dx` / `dy` values in the `place(...)` calls
 
-## Install as an extension
+## Getting started
+
+### Start a new letter from this template
+
+```bash
+quarto use template cwimpy/typst-templates/letterhead
+```
+
+Run this from the *parent* directory where you want the letter to live. Quarto
+will prompt for a name and create a new folder with `template.qmd` and the
+format extension. Render with:
+
+```bash
+quarto render template.qmd
+```
+
+### Or add just the format to an existing project
 
 ```bash
 quarto add cwimpy/typst-templates/letterhead
 ```
 
-Then: `format: letterhead-typst`
+Then set `format: letterhead-typst` in your document's YAML.

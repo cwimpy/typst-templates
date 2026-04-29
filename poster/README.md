@@ -70,10 +70,26 @@ Edit `default-palette` at the top of
 - `paper` — cream (`#fbfaf6`)
 - `muted` — grey (`#6b6b6b`)
 
-## Install as an extension
+## Getting started
+
+### Start a new poster from this template
+
+```bash
+quarto use template cwimpy/typst-templates/poster
+```
+
+Run this from the *parent* directory where you want the poster to live. Quarto
+will prompt for a name and create a new folder with `template.qmd` and the
+format extension. Render with:
+
+```bash
+quarto render template.qmd
+```
+
+### Or add just the format to an existing project
 
 ```bash
 quarto add cwimpy/typst-templates/poster
 ```
 
-Then: `format: poster-typst`
+Then set `format: poster-typst` in your document's YAML.

@@ -40,10 +40,26 @@ positions/departments that will sign:
 Each string becomes one blank row. Use `{{< pagebreak >}}` between
 groups if you need to force page breaks at specific points.
 
-## Install as an extension
+## Getting started
+
+### Start a new sheet from this template
+
+```bash
+quarto use template cwimpy/typst-templates/sign-in-sheet
+```
+
+Run this from the *parent* directory where you want the sheet to live. Quarto
+will prompt for a name and create a new folder with `template.qmd` and the
+format extension. Render with:
+
+```bash
+quarto render template.qmd
+```
+
+### Or add just the format to an existing project
 
 ```bash
 quarto add cwimpy/typst-templates/sign-in-sheet
 ```
 
-Then: `format: sign-in-sheet-typst`
+Then set `format: sign-in-sheet-typst` in your document's YAML.

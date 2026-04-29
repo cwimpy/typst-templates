@@ -72,10 +72,26 @@ Use inside `{=typst}` blocks:
 ```
 ```
 
-## Install as an extension
+## Getting started
+
+### Start a new brief from this template
+
+```bash
+quarto use template cwimpy/typst-templates/policy-brief
+```
+
+Run this from the *parent* directory where you want the brief to live. Quarto
+will prompt for a name and create a new folder with `template.qmd` and the
+format extension. Render with:
+
+```bash
+quarto render template.qmd
+```
+
+### Or add just the format to an existing project
 
 ```bash
 quarto add cwimpy/typst-templates/policy-brief
 ```
 
-Then: `format: policy-brief-typst`
+Then set `format: policy-brief-typst` in your document's YAML.

@@ -51,10 +51,26 @@ quarto render template.qmd
 Available types: `note` (blue), `tip` (green), `important` (accent color),
 `warning` (amber).
 
-## Install as an extension
+## Getting started
+
+### Start a new report from this template
+
+```bash
+quarto use template cwimpy/typst-templates/report
+```
+
+Run this from the *parent* directory where you want the report to live. Quarto
+will prompt for a name and create a new folder with `template.qmd` and the
+format extension. Render with:
+
+```bash
+quarto render template.qmd
+```
+
+### Or add just the format to an existing project
 
 ```bash
 quarto add cwimpy/typst-templates/report
 ```
 
-Then: `format: report-typst`
+Then set `format: report-typst` in your document's YAML.

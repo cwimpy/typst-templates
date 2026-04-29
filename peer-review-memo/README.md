@@ -2,11 +2,29 @@
 
 A Quarto Typst format for writing structured journal peer-review memos.
 
-## Render the example
+## Getting started
+
+### Start a new memo from this template
+
+```bash
+quarto use template cwimpy/typst-templates/peer-review-memo
+```
+
+Run this from the *parent* directory where you want the memo to live. Quarto
+will prompt for a name and create a new folder with `template.qmd` and the
+format extension. Render with:
 
 ```bash
 quarto render template.qmd
 ```
+
+### Or add just the format to an existing project
+
+```bash
+quarto add cwimpy/typst-templates/peer-review-memo
+```
+
+Then set `format: peer-review-memo-typst` in your document's YAML.
 
 ## YAML fields
 

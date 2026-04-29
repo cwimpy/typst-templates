@@ -39,10 +39,26 @@ Level-1 headings (`#`) become major agenda sections with a horizontal rule
 underline. Level-2 headings (`##`) become italic sub-items. Use standard
 Markdown lists under each heading.
 
-## Install as an extension
+## Getting started
+
+### Start a new agenda from this template
+
+```bash
+quarto use template cwimpy/typst-templates/meeting-agenda
+```
+
+Run this from the *parent* directory where you want the agenda to live. Quarto
+will prompt for a name and create a new folder with `template.qmd` and the
+format extension. Render with:
+
+```bash
+quarto render template.qmd
+```
+
+### Or add just the format to an existing project
 
 ```bash
 quarto add cwimpy/typst-templates/meeting-agenda
 ```
 
-Then: `format: meeting-agenda-typst`
+Then set `format: meeting-agenda-typst` in your document's YAML.

@@ -22,10 +22,26 @@ All fields are optional; omit any you don't need.
 | `closing` | Defaults to `Sincerely,` |
 | `date` | `"YYYY-MM-DD"` renders as "Month DD, YYYY"; free-text passes through; omit for today |
 
-## Install as an extension
+## Getting started
+
+### Start a new letter from this template
+
+```bash
+quarto use template cwimpy/typst-templates/cover-letter
+```
+
+Run this from the *parent* directory where you want the letter to live. Quarto
+will prompt for a name and create a new folder with `template.qmd` and the
+format extension. Render with:
+
+```bash
+quarto render template.qmd
+```
+
+### Or add just the format to an existing project
 
 ```bash
 quarto add cwimpy/typst-templates/cover-letter
 ```
 
-Then: `format: cover-letter-typst`
+Then set `format: cover-letter-typst` in your document's YAML.

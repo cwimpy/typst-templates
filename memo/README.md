@@ -58,10 +58,26 @@ Use the `#ps[...]` helper via a raw Typst block:
 ```
 ````
 
-## Install as an extension
+## Getting started
+
+### Start a new memo from this template
+
+```bash
+quarto use template cwimpy/typst-templates/memo
+```
+
+Run this from the *parent* directory where you want the memo to live. Quarto
+will prompt for a name and create a new folder with `template.qmd` and the
+format extension. Render with:
+
+```bash
+quarto render template.qmd
+```
+
+### Or add just the format to an existing project
 
 ```bash
 quarto add cwimpy/typst-templates/memo
 ```
 
-Then: `format: memo-typst`
+Then set `format: memo-typst` in your document's YAML.

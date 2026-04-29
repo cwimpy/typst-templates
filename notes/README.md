@@ -59,14 +59,26 @@ The example uses Minion Pro and Pragmata Pro. If you don't have those
 installed, Typst falls back silently — override `mainfont` / `monofont` in
 YAML to use what you have.
 
-## Install as an extension
+## Getting started
+
+### Start a new notes file from this template
+
+```bash
+quarto use template cwimpy/typst-templates/notes
+```
+
+Run this from the *parent* directory where you want the notes to live. Quarto
+will prompt for a name and create a new folder with `template.qmd` and the
+format extension. Render with:
+
+```bash
+quarto render template.qmd
+```
+
+### Or add just the format to an existing project
 
 ```bash
 quarto add cwimpy/typst-templates/notes
 ```
 
-Then in your `.qmd`:
-
-```yaml
-format: notes-typst
-```
+Then set `format: notes-typst` in your document's YAML.
