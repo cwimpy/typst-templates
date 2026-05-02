@@ -1,0 +1,10 @@
+[package]
+name = "nametags"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["Cameron Wimpy"]
+license = "MIT"
+description = "Conference nametag badges (4x3 in lanyard) and table tents (folded tabloid), driven from a CSV or any iterable."
+repository = "https://github.com/cwimpy/typst-templates"
+keywords = ["nametag", "badge", "conference", "tent"]
+categories = ["paper"]
