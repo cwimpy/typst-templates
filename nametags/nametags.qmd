@@ -1,0 +1,59 @@
+---
+title: "Conference Nametags"
+format:
+  typst:
+    keep-typ: true
+    papersize: us-letter   # overridden per-page by nametag.typ
+    margin:
+      x: 0pt
+      y: 0pt
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: read-attendees
+library(readr)
+library(dplyr)
+library(stringr)
+library(tidyr)
+
+# CSV schema: First, Last, Affil1 (department/title), Affil2 (institution)
+attendees <- read_csv("attendees.csv", show_col_types = FALSE) |>
+  mutate(across(everything(), \(x) replace_na(x, ""))) |>
+  mutate(
+    name           = str_trim(paste(First, Last)),
+    affiliation    = Affil2,    # institution = primary line
+    subaffiliation = Affil1     # department / title = secondary line
+  )
+```
+
+```{r}
+#| label: emit-typst
+#| results: asis
+
+# Escape Typst-special characters so names with quotes/backslashes don't break the build
+ty_escape <- function(x) {
+  x |>
+    str_replace_all(fixed("\\"), "\\\\") |>
+    str_replace_all(fixed("\""), "\\\"")
+}
+
+cat('```{=typst}\n')
+cat('#import "nametag.typ": nametag\n')
+cat('```\n\n')
+
+for (i in seq_len(nrow(attendees))) {
+  a <- attendees[i, ]
+  cat('```{=typst}\n')
+  cat(sprintf(
+    '#nametag(\n  name: "%s",\n  affiliation: "%s",\n  subaffiliation: "%s",\n)\n',
+    ty_escape(a$name),
+    ty_escape(a$affiliation),
+    ty_escape(a$subaffiliation)
+  ))
+  cat('```\n\n')
+}
+```

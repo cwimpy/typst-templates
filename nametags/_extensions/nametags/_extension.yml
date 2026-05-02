@@ -1,0 +1,13 @@
+title: Conference Nametags
+author: Cameron Wimpy
+version: 0.1.0
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+    typst:
+      papersize: us-letter
+      margin:
+        x: 0pt
+        y: 0pt
+      toc: false
+      section-numbering: ""

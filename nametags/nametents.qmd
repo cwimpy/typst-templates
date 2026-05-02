@@ -1,0 +1,54 @@
+---
+title: "Conference Table Tents"
+format:
+  typst:
+    keep-typ: true
+    papersize: us-letter
+    margin:
+      x: 0pt
+      y: 0pt
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: read-attendees
+library(readr)
+library(dplyr)
+library(stringr)
+library(tidyr)
+
+# Same CSV as the badges — only the `First`, `Last`, and `Affil2` columns
+# are used here.
+attendees <- read_csv("attendees.csv", show_col_types = FALSE) |>
+  mutate(across(everything(), \(x) replace_na(x, ""))) |>
+  mutate(name = str_trim(paste(First, Last)))
+```
+
+```{r}
+#| label: emit-typst
+#| results: asis
+
+ty_escape <- function(x) {
+  x |>
+    str_replace_all(fixed("\\"), "\\\\") |>
+    str_replace_all(fixed("\""), "\\\"")
+}
+
+cat('```{=typst}\n')
+cat('#import "nametent.typ": nametent\n')
+cat('```\n\n')
+
+for (i in seq_len(nrow(attendees))) {
+  a <- attendees[i, ]
+  cat('```{=typst}\n')
+  cat(sprintf(
+    '#nametent(\n  name: "%s",\n  affiliation: "%s",\n)\n',
+    ty_escape(a$name),
+    ty_escape(a$Affil2)
+  ))
+  cat('```\n\n')
+}
+```

@@ -34,6 +34,7 @@ LaTeX toolchain required.
 | [`memo`](memo/) | Generic institutional memo — configurable branding, optional signatures |
 | [`meeting-agenda`](meeting-agenda/) | Department / committee agenda or minutes |
 | [`sign-in-sheet`](sign-in-sheet/) | Grouped sign-in tables for meetings |
+| [`nametags`](nametags/) | Conference badges (4×3 in) and table tents (tabloid, folded), driven from a CSV |
 
 ## Using a template
 
