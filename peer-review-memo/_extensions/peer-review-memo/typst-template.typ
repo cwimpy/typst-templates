@@ -31,7 +31,7 @@
   recommendation: none,
   confidential: false,
   font-body: "Libertinus Serif",
-  font-heading: "Libertinus Sans",
+  font-heading: "Myriad Pro",
   font-mono: "JetBrains Mono",
   fontsize: 11pt,
   doc,
@@ -58,14 +58,14 @@
 
   show heading: set text(font: font-heading, weight: "semibold")
   show heading.where(level: 1): it => {
-    v(1em, weak: true)
+    v(1.2em, weak: true)
     text(size: 1.15em, it.body)
-    v(0.3em, weak: true)
+    v(0.8em, weak: true)
   }
   show heading.where(level: 2): it => {
-    v(0.8em, weak: true)
+    v(1em, weak: true)
     text(size: 1.05em, it.body)
-    v(0.2em, weak: true)
+    v(0.6em, weak: true)
   }
 
   show raw: set text(font: font-mono, size: 0.92em)
