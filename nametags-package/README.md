@@ -24,8 +24,8 @@ Or use a local checkout:
 #import "@preview/nametags:0.1.0": nametag
 
 #let rows = csv("attendees.csv").slice(1)        // drop header row
-#let left-logo = read("logo-left.png", encoding: none)
-#let right-logo = read("logo-right.png", encoding: none)
+#let left-logo = read("logo-left.png", encoding: none)   // your logo
+#let right-logo = read("logo-right.png", encoding: none) // your logo
 
 #for row in rows {
   let (first, last, dept, inst) = row
@@ -63,8 +63,8 @@ You'll get one 4 × 3 in page per attendee.
 #import "@preview/nametags:0.1.0": nametent
 
 #let rows = csv("attendees.csv").slice(1)
-#let left-logo = read("logo-left.png", encoding: none)
-#let right-logo = read("logo-right.png", encoding: none)
+#let left-logo = read("logo-left.png", encoding: none)   // your logo
+#let right-logo = read("logo-right.png", encoding: none) // your logo
 
 #for row in rows {
   let (first, last, _, inst) = row
@@ -105,6 +105,7 @@ Renders a single tabloid landscape page that folds into a tent. Same parameter c
 ## Notes
 
 - **Logos are bytes, not paths.** Typst resolves `image()` paths relative to the file containing the call, so passing a path string into a packaged function won't find a file in your project. Loading the bytes once with `read()` and handing them in sidesteps this.
+- **Example logos are placeholders.** `examples/logo-left.png` and `examples/logo-right.png` are simple wordmarks generated for the demo. Replace them with your own.
 - **Fonts.** Both functions default to "Industry Inc Test Base" (headings) and "Oriya MN" (body), with Impact / Times New Roman as fallbacks. Edit the `heading-font` and `body-font` lists at the top of `nametag.typ` / `nametent.typ` to swap.
 - **Quarto users.** A Quarto-driven version of this template lives at [`cwimpy/typst-templates/nametags`](https://github.com/cwimpy/typst-templates/tree/main/nametags), with an R chunk that reads the CSV and emits Typst calls.
 

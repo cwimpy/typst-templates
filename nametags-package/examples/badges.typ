@@ -9,8 +9,8 @@
 #let rows = csv("attendees.csv").slice(1)  // drop header row
 
 // Load logos once as bytes; the package re-uses them on every page.
-#let left-logo = read("iri.png", encoding: none)
-#let right-logo = read("astate.png", encoding: none)
+#let left-logo = read("logo-left.png", encoding: none)
+#let right-logo = read("logo-right.png", encoding: none)
 
 #for row in rows {
   let (first, last, affil1, affil2) = row
