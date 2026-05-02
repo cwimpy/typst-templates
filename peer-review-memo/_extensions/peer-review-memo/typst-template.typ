@@ -31,7 +31,7 @@
   recommendation: none,
   confidential: false,
   font-body: "Libertinus Serif",
-  font-heading: "Myriad Pro",
+  font-heading: ("Myriad Pro", "Helvetica Neue", "Helvetica", "Arial", "Libertinus Sans"),
   font-mono: "JetBrains Mono",
   fontsize: 11pt,
   doc,
